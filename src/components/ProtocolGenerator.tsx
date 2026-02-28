@@ -52,9 +52,9 @@ export default function ProtocolGenerator() {
                 {/* Left: Copy & Inputs */}
                 <div className="space-y-12">
                     <div>
-                        <h2 className="text-sm uppercase tracking-[0.2em] text-accent mb-6 font-semibold">Interactive</h2>
+                        <h2 className="text-sm uppercase tracking-[0.2em] text-white mb-6 font-semibold">Interactive</h2>
                         <h3 className="text-5xl lg:text-6xl font-heading leading-[1.1] mb-6 text-white">
-                            Kinetic Protocol <br /> <span className="italic text-zinc-500">Generator.</span>
+                            Kinetic Protocol <br /> <span className="italic text-white">Generator.</span>
                         </h3>
                         <p className="text-zinc-400 text-lg font-light leading-relaxed">
                             Every stress demands a specific adaptation. Input your variables below to receive an immediate, scientifically-backed recovery protocol engineered for today’s state.
