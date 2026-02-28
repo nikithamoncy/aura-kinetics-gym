@@ -48,7 +48,7 @@ export default function MembershipPage() {
                 </header>
 
                 <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-20">
-                    {tiers.map((tier, idx) => (
+                    {tiers.map((tier) => (
                         <motion.div
                             key={tier.name}
                             whileHover={{ y: -5 }}
@@ -79,8 +79,8 @@ export default function MembershipPage() {
                             </ul>
 
                             <button className={`w-full py-4 text-sm font-bold uppercase tracking-widest transition-colors ${tier.popular
-                                    ? "bg-zinc-950 text-white hover:bg-zinc-800"
-                                    : "bg-surface text-zinc-950 hover:bg-gray-200"
+                                ? "bg-zinc-950 text-white hover:bg-zinc-800"
+                                : "bg-surface text-zinc-950 hover:bg-gray-200"
                                 }`}>
                                 Join Now
                             </button>

@@ -11,7 +11,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-fixed bg-center opacity-10"></div>
         <div className="max-w-[1000px] mx-auto px-8 text-center relative z-10">
           <h2 className="font-heading text-4xl md:text-6xl leading-[1.2] font-light mb-12">
-            "Performance is not an accident. It is the predictable outcome of <span className="text-accent italic">precise mathematics</span> and unyielding intent."
+            &quot;Performance is not an accident. It is the predictable outcome of <span className="text-accent italic">precise mathematics</span> and unyielding intent.&quot;
           </h2>
           <div className="flex items-center justify-center gap-6">
             <span className="w-12 h-[1px] bg-accent"></span>

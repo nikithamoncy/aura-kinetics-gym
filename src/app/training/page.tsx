@@ -26,7 +26,7 @@ export default function TrainingPage() {
 
                 <div className="grid md:grid-cols-3 gap-12 mb-20">
                     <div className="md:col-span-2">
-                        <h2 className="text-2xl font-heading font-black uppercase mb-8 border-b border-gray-200 pb-4">Today's Protocol</h2>
+                        <h2 className="text-2xl font-heading font-black uppercase mb-8 border-b border-gray-200 pb-4">Today&apos;s Protocol</h2>
 
                         <div className="space-y-4">
                             {schedule.map((session, idx) => (
@@ -40,8 +40,8 @@ export default function TrainingPage() {
                                     </div>
                                     <div className="flex items-center gap-4">
                                         <span className={`text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-sm ${session.spots === "Waitlist" ? "bg-red-50 text-red-600" :
-                                                session.spots === "Open" ? "bg-green-50 text-green-600" :
-                                                    "bg-orange-50 text-orange-600"
+                                            session.spots === "Open" ? "bg-green-50 text-green-600" :
+                                                "bg-orange-50 text-orange-600"
                                             }`}>
                                             {session.spots}
                                         </span>

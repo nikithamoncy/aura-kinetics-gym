@@ -7,7 +7,7 @@ export default function ProtocolGenerator() {
     const [sleep, setSleep] = useState<number>(7);
     const [focus, setFocus] = useState<string>("CNS Reset");
     const [generating, setGenerating] = useState(false);
-    const [protocol, setProtocol] = useState<any>(null);
+    const [protocol, setProtocol] = useState<{ title: string; steps: { phase: string; desc: string }[] } | null>(null);
 
     const generateProtocol = () => {
         setGenerating(true);
@@ -133,7 +133,7 @@ export default function ProtocolGenerator() {
                         <div className="w-full animate-in fade-in slide-in-from-bottom-8 duration-700">
                             <h4 className="text-3xl font-heading mb-10 pb-6 border-b border-zinc-800 text-white">{protocol.title}</h4>
                             <div className="space-y-10">
-                                {protocol.steps.map((step: any, idx: number) => (
+                                {protocol.steps.map((step: { phase: string; desc: string }, idx: number) => (
                                     <div key={idx} className="flex gap-6">
                                         <span className="text-accent text-sm font-bold tracking-widest uppercase shrink-0 mt-0.5">{`0${idx + 1}`}</span>
                                         <div>
@@ -143,18 +143,15 @@ export default function ProtocolGenerator() {
                                     </div>
                                 ))}
                             </div>
-                            <div className="mt-14 pt-8 border-t border-zinc-800">
-                                <button className="text-xs uppercase tracking-[0.2em] text-accent font-bold flex items-center gap-3 hover:text-white transition-colors">
-                                    Save to Member App <span className="text-lg">→</span>
-                                </button>
-                            </div>
+                            <button className="text-xs uppercase tracking-[0.2em] text-accent font-bold flex items-center gap-3 hover:text-white transition-colors">
+                                Save to Member App <span className="text-lg">→</span>
+                            </button>
                         </div>
                     )}
                 </div>
-
             </div>
 
-            {/* Custom loading animation tailwind config will need this, but we inline tailwind arbitrary for now or assume standard */}
+            {/* Custom loading animation */}
             <style dangerouslySetInnerHTML={{
                 __html: `
         @keyframes loading {
@@ -162,7 +159,8 @@ export default function ProtocolGenerator() {
           50% { width: 40%; }
           100% { width: 100%; transform: translateX(100%); }
         }
-      `}} />
+      `
+            }} />
         </section>
     );
 }
