@@ -82,7 +82,7 @@ export default function Home() {
 
       {/* End CTA */}
       <section className="py-40 relative flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-center brightness-50"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-fixed bg-center brightness-50"></div>
         <div className="absolute inset-0 bg-accent mix-blend-multiply opacity-80"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent"></div>
 
