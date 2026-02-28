@@ -6,21 +6,6 @@ export default function Home() {
     <div className="bg-[#0A0A0A] text-white overflow-hidden">
       <Hero />
 
-      {/* Heavy Statement Section */}
-      <section className="py-32 relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-fixed bg-center opacity-10"></div>
-        <div className="max-w-[1000px] mx-auto px-8 text-center relative z-10">
-          <h2 className="font-heading text-4xl md:text-6xl leading-[1.2] font-light mb-12">
-            &quot;Performance is not an accident. It is the predictable outcome of <span className="text-accent italic">precise mathematics</span> and unyielding intent.&quot;
-          </h2>
-          <div className="flex items-center justify-center gap-6">
-            <span className="w-12 h-[1px] bg-accent"></span>
-            <p className="text-xs tracking-[0.3em] uppercase text-zinc-400 font-bold">The Aura Philosophy</p>
-            <span className="w-12 h-[1px] bg-accent"></span>
-          </div>
-        </div>
-      </section>
-
       {/* The Atmosphere Gallery / Split Sections */}
       <section className="py-24 bg-white text-zinc-950 rounded-t-[3rem] shadow-[0_-20px_50px_rgba(0,0,0,0.5)] relative z-20">
         <div className="max-w-[1400px] mx-auto px-8">
@@ -72,6 +57,21 @@ export default function Home() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* Heavy Statement Section */}
+      <section className="py-32 relative">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-fixed bg-center opacity-10"></div>
+        <div className="max-w-[1000px] mx-auto px-8 text-center relative z-10">
+          <h2 className="font-heading text-4xl md:text-6xl leading-[1.2] font-light mb-12">
+            &quot;Performance is not an accident. It is the predictable outcome of <span className="text-accent italic">precise mathematics</span> and unyielding intent.&quot;
+          </h2>
+          <div className="flex items-center justify-center gap-6">
+            <span className="w-12 h-[1px] bg-accent"></span>
+            <p className="text-xs tracking-[0.3em] uppercase text-zinc-400 font-bold">The Aura Philosophy</p>
+            <span className="w-12 h-[1px] bg-accent"></span>
+          </div>
         </div>
       </section>
 

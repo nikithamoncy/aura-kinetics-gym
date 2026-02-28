@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -39,12 +40,12 @@ export default function Hero() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
-                        <button className="px-12 py-5 bg-accent text-white uppercase tracking-[0.2em] text-xs font-bold hover:bg-white hover:text-black transition-all duration-500 shadow-[0_0_40px_rgba(0,71,255,0.4)]">
+                        <Link href="/membership" className="px-12 py-5 bg-accent text-white uppercase tracking-[0.2em] text-xs font-bold hover:bg-white hover:text-black transition-all duration-500 shadow-[0_0_40px_rgba(0,71,255,0.4)] block text-center">
                             Claim Allocation
-                        </button>
-                        <button className="px-12 py-5 bg-transparent border border-white/30 text-white uppercase tracking-[0.2em] text-xs font-bold hover:bg-white/10 hover:border-white transition-all duration-500 backdrop-blur-sm">
+                        </Link>
+                        <Link href="/facility" className="px-12 py-5 bg-transparent border border-white/30 text-white uppercase tracking-[0.2em] text-xs font-bold hover:bg-white/10 hover:border-white transition-all duration-500 backdrop-blur-sm block text-center">
                             Explore Facility
-                        </button>
+                        </Link>
                     </div>
                 </motion.div>
             </div>

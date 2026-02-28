@@ -14,10 +14,10 @@ export default function NavBar() {
 
                 {/* Center: Links */}
                 <div className="hidden md:flex items-center space-x-12">
-                    {["Facility", "Training", "Membership"].map((item) => (
+                    {["Home", "Facility", "Training", "Membership"].map((item) => (
                         <Link
                             key={item}
-                            href={`/${item.toLowerCase()}`}
+                            href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                             className="group relative text-xs tracking-[0.2em] uppercase text-zinc-500 hover:text-foreground transition-colors duration-500"
                         >
                             {item}
