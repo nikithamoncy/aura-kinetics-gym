@@ -3,7 +3,7 @@ import ProtocolGenerator from "@/components/ProtocolGenerator";
 
 export default function Home() {
   return (
-    <div className="bg-[#0A0A0A] text-white overflow-hidden">
+    <div className="bg-white text-zinc-950 overflow-hidden">
       <Hero />
 
       {/* The Atmosphere Gallery / Split Sections */}
@@ -18,7 +18,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-16 md:mb-32">
-            <div className="aspect-[4/5] overflow-hidden group">
+            <div className="aspect-[4/3] md:aspect-[3/2] overflow-hidden group rounded-2xl">
               <img
                 src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?q=80&w=2831&auto=format&fit=crop"
                 alt="Heavy Lifting"
@@ -48,7 +48,7 @@ export default function Home() {
                 View Recovery Protocols
               </button>
             </div>
-            <div className="aspect-[4/5] overflow-hidden group order-1 md:order-2">
+            <div className="aspect-[4/3] md:aspect-[3/2] overflow-hidden group order-1 md:order-2 rounded-2xl">
               <img
                 src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop"
                 alt="Recovery Plunge"
@@ -69,14 +69,14 @@ export default function Home() {
           </h2>
           <div className="flex items-center justify-center gap-6">
             <span className="w-12 h-[1px] bg-accent"></span>
-            <p className="text-xs tracking-[0.3em] uppercase text-zinc-400 font-bold">The Aura Philosophy</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-zinc-500 font-bold">The Aura Philosophy</p>
             <span className="w-12 h-[1px] bg-accent"></span>
           </div>
         </div>
       </section>
 
       {/* Protocol Generator replaces the grey background from before, making it dark theme */}
-      <div className="bg-[#050505] text-white">
+      <div className="bg-zinc-50 border-y border-zinc-200 text-zinc-950">
         <ProtocolGenerator />
       </div>
 
