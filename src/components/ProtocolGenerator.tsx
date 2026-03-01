@@ -46,8 +46,8 @@ export default function ProtocolGenerator() {
     };
 
     return (
-        <section className="py-32 bg-white relative border-t border-zinc-200 border-b">
-            <div className="max-w-[1400px] mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <section className="py-16 md:py-24 lg:py-32 bg-white relative border-t border-zinc-200 border-b">
+            <div className="max-w-[1400px] mx-auto px-6 md:px-8 grid md:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
                 {/* Left: Copy & Inputs */}
                 <div className="space-y-12">
@@ -61,7 +61,7 @@ export default function ProtocolGenerator() {
                         </p>
                     </div>
 
-                    <div className="space-y-8 bg-zinc-50 p-10 relative border border-zinc-200">
+                    <div className="space-y-6 md:space-y-8 bg-zinc-50 p-6 md:p-10 relative border border-zinc-200">
                         {/* Corner accents */}
                         <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-accent"></div>
                         <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-accent"></div>
@@ -110,7 +110,7 @@ export default function ProtocolGenerator() {
                 </div>
 
                 {/* Right: Output Display */}
-                <div className="h-full min-h-[500px] flex items-center justify-center border border-zinc-200 bg-zinc-50 relative p-10 shadow-lg">
+                <div className="h-full min-h-[400px] md:min-h-[500px] flex items-center justify-center border border-zinc-200 bg-zinc-50 relative p-6 md:p-10 shadow-lg">
                     {!protocol && !generating && (
                         <div className="text-center">
                             <span className="block w-16 h-16 border border-zinc-300 mx-auto rounded-full flex items-center justify-center mb-6">

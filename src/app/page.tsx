@@ -7,17 +7,17 @@ export default function Home() {
       <Hero />
 
       {/* The Atmosphere Gallery / Split Sections */}
-      <section className="py-24 bg-white text-zinc-950 rounded-t-[3rem] shadow-[0_-20px_50px_rgba(0,0,0,0.5)] relative z-20">
-        <div className="max-w-[1400px] mx-auto px-8">
+      <section className="py-16 md:py-24 bg-white text-zinc-950 rounded-t-[3rem] shadow-[0_-20px_50px_rgba(0,0,0,0.5)] relative z-20">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-8">
 
-          <div className="mb-24 flex flex-col md:flex-row justify-between items-end gap-8 border-b border-zinc-200 pb-12">
+          <div className="mb-12 md:mb-24 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-8 border-b border-zinc-200 pb-8 md:pb-12">
             <h2 className="font-heading text-6xl md:text-8xl tracking-tight">The <br /><span className="italic text-zinc-400">Architecture.</span></h2>
             <p className="max-w-md text-zinc-500 font-light leading-relaxed text-lg">
               Every square foot is engineered to manipulate your environment and force physiological adaptation. No distractions. Pure stimulus.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-16 md:mb-32">
             <div className="aspect-[4/5] overflow-hidden group">
               <img
                 src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?q=80&w=2831&auto=format&fit=crop"
@@ -37,7 +37,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-16 md:mb-32">
             <div className="space-y-8 lg:pr-12 order-2 md:order-1">
               <span className="text-accent text-sm font-bold tracking-widest uppercase">02 / The Lab</span>
               <h3 className="font-heading text-5xl">Clinical Recovery.</h3>
@@ -61,9 +61,9 @@ export default function Home() {
       </section>
 
       {/* Heavy Statement Section */}
-      <section className="py-32 relative">
+      <section className="py-16 md:py-32 relative">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-fixed bg-center opacity-10"></div>
-        <div className="max-w-[1000px] mx-auto px-8 text-center relative z-10">
+        <div className="max-w-[1000px] mx-auto px-6 md:px-8 text-center relative z-10">
           <h2 className="font-heading text-4xl md:text-6xl leading-[1.2] font-light mb-12">
             &quot;Performance is not an accident. It is the predictable outcome of <span className="text-accent italic">precise mathematics</span> and unyielding intent.&quot;
           </h2>
@@ -81,7 +81,7 @@ export default function Home() {
       </div>
 
       {/* End CTA */}
-      <section className="py-40 relative flex items-center justify-center overflow-hidden">
+      <section className="py-20 md:py-40 relative flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-fixed bg-center brightness-50"></div>
         <div className="absolute inset-0 bg-accent mix-blend-multiply opacity-80"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent"></div>
