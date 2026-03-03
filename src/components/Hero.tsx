@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-[850px] flex items-center justify-center overflow-hidden bg-white pt-32 pb-20">
+        <section className="relative min-h-[600px] lg:min-h-[750px] flex items-center justify-center overflow-hidden bg-white pt-24 pb-12">
             {/* Dynamic Background Noise/Gradient */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-radial from-zinc-100 via-white to-white" />
