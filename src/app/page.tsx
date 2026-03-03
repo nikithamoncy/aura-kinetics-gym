@@ -50,7 +50,7 @@ export default function Home() {
             </div>
             <div className="aspect-[4/3] rounded-2xl overflow-hidden group order-1 md:order-2">
               <img
-                src="https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=2940&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=2940&auto=format&fit=crop"
                 alt="Recovery Plunge"
                 className="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105"
               />
