@@ -18,9 +18,9 @@ export default function FacilityPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     {/* Training Floor */}
-                    <div className="bg-surface p-8 border border-gray-100 hover:border-gray-300 transition-colors">
+                    <div className="bg-surface p-8 border border-gray-100 hover:border-gray-300 transition-colors group cursor-pointer">
                         <div className="h-64 bg-zinc-200 mb-8 border border-gray-200 rounded-sm overflow-hidden relative">
-                            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-center grayscale opacity-80 mix-blend-multiply"></div>
+                            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-center grayscale opacity-80 mix-blend-multiply transition-all duration-1000 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 group-hover:mix-blend-normal"></div>
                         </div>
                         <h2 className="text-2xl font-heading font-black uppercase mb-4">The Training Floor</h2>
                         <ul className="text-zinc-600 space-y-3 mb-8">
@@ -32,9 +32,9 @@ export default function FacilityPage() {
                     </div>
 
                     {/* Recovery Lab */}
-                    <div className="bg-surface p-8 border border-gray-100 hover:border-gray-300 transition-colors">
+                    <div className="bg-surface p-8 border border-gray-100 hover:border-gray-300 transition-colors group cursor-pointer">
                         <div className="h-64 bg-zinc-200 mb-8 border border-gray-200 rounded-sm overflow-hidden relative">
-                            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-center grayscale opacity-80 mix-blend-multiply"></div>
+                            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-center grayscale opacity-80 mix-blend-multiply transition-all duration-1000 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 group-hover:mix-blend-normal"></div>
                         </div>
                         <h2 className="text-2xl font-heading font-black uppercase mb-4">The Recovery Lab</h2>
                         <ul className="text-zinc-600 space-y-3 mb-8">

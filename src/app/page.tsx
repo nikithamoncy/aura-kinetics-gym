@@ -18,7 +18,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-16 md:mb-32">
-            <div className="aspect-[4/5] overflow-hidden group">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden group">
               <img
                 src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?q=80&w=2831&auto=format&fit=crop"
                 alt="Heavy Lifting"
@@ -48,7 +48,7 @@ export default function Home() {
                 View Recovery Protocols
               </button>
             </div>
-            <div className="aspect-[4/5] overflow-hidden group order-1 md:order-2">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden group order-1 md:order-2">
               <img
                 src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop"
                 alt="Recovery Plunge"

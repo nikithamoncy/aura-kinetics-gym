@@ -52,7 +52,7 @@ export default function Hero() {
                     initial={{ opacity: 0, x: 40 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                    className="relative w-full aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden group order-1 lg:order-2 shadow-2xl shadow-black/10"
+                    className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden group order-1 lg:order-2 shadow-2xl shadow-black/10"
                 >
                     <div className="absolute inset-0 bg-accent/10 mix-blend-overlay z-10 transition-opacity duration-700 group-hover:opacity-0" />
                     <img
