@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-[600px] lg:min-h-[750px] flex items-center justify-center overflow-hidden bg-white pt-24 pb-12">
+        <section className="relative flex items-center justify-center overflow-hidden bg-white pt-28 pb-12 lg:pt-32 lg:pb-16">
             {/* Dynamic Background Noise/Gradient */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-radial from-zinc-100 via-white to-white" />
@@ -52,7 +52,7 @@ export default function Hero() {
                     initial={{ opacity: 0, x: 40 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                    className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden group order-1 lg:order-2 shadow-2xl shadow-black/10"
+                    className="relative w-full aspect-[5/4] rounded-3xl overflow-hidden group order-1 lg:order-2 shadow-2xl shadow-black/10"
                 >
                     <div className="absolute inset-0 bg-accent/10 mix-blend-overlay z-10 transition-opacity duration-700 group-hover:opacity-0" />
                     <img
