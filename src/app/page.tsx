@@ -18,7 +18,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-16 md:mb-32">
-            <div className="aspect-[4/3] md:aspect-[3/2] overflow-hidden group rounded-2xl">
+            <div className="aspect-[4/5] overflow-hidden group">
               <img
                 src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?q=80&w=2831&auto=format&fit=crop"
                 alt="Heavy Lifting"
@@ -48,7 +48,7 @@ export default function Home() {
                 View Recovery Protocols
               </button>
             </div>
-            <div className="aspect-[4/3] md:aspect-[3/2] overflow-hidden group order-1 md:order-2 rounded-2xl">
+            <div className="aspect-[4/5] overflow-hidden group order-1 md:order-2">
               <img
                 src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop"
                 alt="Recovery Plunge"
@@ -61,22 +61,23 @@ export default function Home() {
       </section>
 
       {/* Heavy Statement Section */}
-      <section className="py-16 md:py-32 relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-fixed bg-center opacity-10"></div>
+      <section className="py-16 md:py-32 relative bg-[#0A0A0A] text-white">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-fixed bg-center opacity-50"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="max-w-[1000px] mx-auto px-6 md:px-8 text-center relative z-10">
           <h2 className="font-heading text-4xl md:text-6xl leading-[1.2] font-light mb-12">
             &quot;Performance is not an accident. It is the predictable outcome of <span className="text-accent italic">precise mathematics</span> and unyielding intent.&quot;
           </h2>
           <div className="flex items-center justify-center gap-6">
             <span className="w-12 h-[1px] bg-accent"></span>
-            <p className="text-xs tracking-[0.3em] uppercase text-zinc-500 font-bold">The Aura Philosophy</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-zinc-400 font-bold">The Aura Philosophy</p>
             <span className="w-12 h-[1px] bg-accent"></span>
           </div>
         </div>
       </section>
 
       {/* Protocol Generator replaces the grey background from before, making it dark theme */}
-      <div className="bg-zinc-50 border-y border-zinc-200 text-zinc-950">
+      <div className="bg-[#050505] text-white">
         <ProtocolGenerator />
       </div>
 
